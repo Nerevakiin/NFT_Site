@@ -6,15 +6,18 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: #5f29a3;
-    padding: 45px 0px;
+
+
+
+/* Typography */
+
+h1, h3 {
+    margin: 0;
 }
 
 h1 {
     color: whitesmoke;
     font-size: 36px;
-    margin: 0;
 }
 
 h2 {
@@ -24,25 +27,76 @@ h2 {
 h3 {
     color: #d0aaff;
     font-size: 20px;
-    margin: 0;
 }
+
+p {
+    line-height: 23px;
+}
+
+
+
+/* Links */
 
 a{
     color: #ef5839;
     text-decoration: underline dotted; 
+    display: inline-block;
 }
 
-a:hover{
+a:hover, a:active{
     color: #d4b44c;
 }
 
-a:active{
-    color: #d4b44c;
+/* Layout */
+
+.btn-dark,
+.btn-mid,
+.btn-light {
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-section {
-    padding: 45px 0;
+.btn-dark {
+    background-color: #5f29a3;
+    color: whitesmoke;
 }
+
+.btn-mid {
+    background-color: #d0aaff;
+    color:#5f29a3;
+}
+
+.btn-light {
+    background-color: whitesmoke;
+    color: #5f29a3;
+}
+
+.btn-dark:hover,
+.btn-mid:hover,
+.btn-light:hover,
+.btn-dark:active,
+.btn-mid:active,
+.btn-light:active {
+    background-color: #f3e885;
+    color: #2b283a;
+}
+
+
+header, section, footer {
+    padding: 45px 0px;
+}
+
+header, .crypto-connoisseur {
+    background-color: #5f29a3; 
+}
+
+footer {
+    text-align: center;
+    color: #5f29a3;
+}
+
 
 .container {
     width: 620px;
@@ -54,7 +108,6 @@ section {
 }
 
 .crypto-connoisseur {
-    background-color: #5f29a3;
     color: white;
 }
 
