@@ -49,9 +49,7 @@ a:hover, a:active{
 
 /* Layout */
 
-.btn-dark,
-.btn-mid,
-.btn-light {
+.btn {
     padding: 10px 19px;
     border-radius: 4.6px;
     font-weight: 500;
@@ -73,12 +71,7 @@ a:hover, a:active{
     color: #5f29a3;
 }
 
-.btn-dark:hover,
-.btn-mid:hover,
-.btn-light:hover,
-.btn-dark:active,
-.btn-mid:active,
-.btn-light:active {
+.btn:hover, .btn:active {
     background-color: #f3e885;
     color: #2b283a;
 }
