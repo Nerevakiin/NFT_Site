@@ -1,17 +1,13 @@
-
 body {
-    font-size: 16px;
     color: #2b283a;
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
+/* ----- TYPOGRAPHY ----- */
 
-
-
-/* Typography */
-
-h1, h3 {
+h1, 
+h3 {
     margin: 0;
 }
 
@@ -21,11 +17,12 @@ h1 {
 }
 
 h2 {
+    color: #451c7a;
+    font-size: 28px;
     margin-top: 0;
 }
 
 h3 {
-    color: #d0aaff;
     font-size: 20px;
 }
 
@@ -33,84 +30,102 @@ p {
     line-height: 23px;
 }
 
-
-
-/* Links */
-
-a{
-    color: #ef5839;
-    text-decoration: underline dotted; 
-    display: inline-block;
+.subheading {
+    display: block;
+    font-size: 20px;
+    color: #d0aaff;
 }
 
-a:hover, a:active{
+.section-two h2 {
+    color: inherit;
+}
+
+/* ----- LINKS ----- */
+
+a {
+    color: #ef5839;
+    text-decoration: underline dotted; 
+}
+
+a:hover, 
+a:active {
     color: #d4b44c;
 }
 
-/* Layout */
-
 .btn {
-    padding: 10px 19px;
-    border-radius: 4.6px;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4.6px;
 }
 
 .btn-dark {
-    background-color: #5f29a3;
     color: whitesmoke;
+    background: #5f29a3;
 }
 
 .btn-mid {
-    background-color: #d0aaff;
-    color:#5f29a3;
+    color: #5f29a3; 
+    background: #f0e0ff; 
 }
 
 .btn-light {
-    background-color: whitesmoke;
-    color: #5f29a3;
+    color: #5f29a3; 
+    background: whitesmoke;
 }
 
-.btn:hover, .btn:active {
+.btn:hover, 
+.btn:active {
+    color: #2b238a;
     background-color: #f3e885;
-    color: #2b283a;
 }
 
+/* ----- LAYOUT ----- */
 
-header, section, footer {
-    padding: 45px 0px;
+header, 
+section, 
+footer {
+    padding: 46px 0;
 }
 
-header, .crypto-connoisseur {
-    background-color: #5f29a3; 
+header, 
+.section-two {
+    background-color: #5f29a3;
+}
+
+.section-two {
+    color: whitesmoke;
+}
+
+/*
+ Challenge:
+  Use a percentage value to create flexible containers 
+  that resize according to their parent’s width
+*/
+
+.container {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.section-two-image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-image {
+    width: 310px;
+    border-radius: 4.6px;
 }
 
 footer {
     text-align: center;
     color: #5f29a3;
 }
-
-
-.container {
-    width: 620px;
-    margin: 0 auto;
-}
-
-.main-image {
-    width: 100%;
-}
-
-.crypto-connoisseur {
-    color: white;
-}
-
-.section-two-images {
-    display: flex;
-    justify-content: space-between;
-}
-
-.top-nft, .nft-properties {
-    width: 300px;
-    border-radius: 4.6px;
-}
-
