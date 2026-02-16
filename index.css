@@ -123,11 +123,27 @@ header,
 }
 
 
+
+
 .feature-image {
     width: 100%;
     margin-bottom: 1em;
     border-radius: 4.6px;
+    
 }
+
+.future-item {
+    flex-basis: 220px;
+    flex-grow: 1;
+    
+}
+
+.section-two-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 
 footer {
     text-align: center;
@@ -170,7 +186,7 @@ li:not(:last-child) {
 }
 
 
-@media (min-width: 480px) {
+/* @media (min-width: 480px) {
     .section-two-image-container {
         display: flex;
         justify-content: space-between;
@@ -179,7 +195,7 @@ li:not(:last-child) {
     .feature-image {
         width: 48%;
     }
-}
+} */
 
 @media (min-width: 768px) {
 
