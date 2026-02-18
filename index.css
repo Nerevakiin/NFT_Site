@@ -124,6 +124,11 @@ header,
 
 
 
+.section-two-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
 .feature-image {
     width: 100%;
@@ -138,11 +143,7 @@ header,
     
 }
 
-.section-two-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-}
+
 
 
 footer {
